@@ -3,18 +3,19 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 
     <script type="text/javascript">
-        function showToast(toast) {
-            javascript:control.showToast(toast);
-        }
-        function log(msg){
-            console.log(msg);
+       
+        function dosubmit(){
+        	var value=document.getElementById("h").value;
+        	
         }
     </script>
 
 </head>
 
 <body>
-<input type="button" value="toast"
-       onClick="showToast('Hello world')" />
+<form method=’post’ action=’/Webserver/form’>
+<input id=’h’ name=’h’ value=’1’ type=’hidden’/>
+<input type=’button’ value=’submit’ onclick=’dosubmit();’ />
+</form>
 </body>
 </html>
