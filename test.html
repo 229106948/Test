@@ -5,8 +5,9 @@
     <script type="text/javascript">
        
         function dosubmit(){
-        	var value=document.getElementById("h").value;
-        	
+        	var value=document.getElementById("h").value
+        	 document.getElementById("button").action="/Webserver/form.do?inputData="+"&value="+value;
+             document.getElementById("button").submit();
         }
     </script>
 
