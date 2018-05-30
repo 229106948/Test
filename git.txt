@@ -7,3 +7,7 @@
 提交本地分支到远程：git push origin  [branchName]
 删除远程分支：git checkout -r -d origin/[branchName]   git push origin :[branchName]
 跟踪新建文件状态：git add [fileName]
+查看文件状态：git status
+撤销add操作：git reset HEAD [fileName]
+覆盖上次commit操作：git commit --amend -m [说明]
+撤销commit操作：git reset --soft|--mixed|--hard <commit_id>
