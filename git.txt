@@ -5,9 +5,15 @@
 创建新本地分支：git checkout -b [branchName]
 删除本地分支：git branch -d [branchName]
 提交本地分支到远程：git push origin  [branchName]
-删除远程分支：git checkout -r -d origin/[branchName]   git push origin :[branchName]
+删除远程分支：git branch-r -d origin/[branchName]   git push origin :[branchName]
 跟踪新建文件状态：git add [fileName]
 查看文件状态：git status
 撤销add操作：git reset HEAD [fileName]
 覆盖上次commit操作：git commit --amend -m [说明]
 撤销commit操作：git reset --soft|--mixed|--hard <commit_id>
+提交本地项目到远程仓库：
+1、进入项目文件夹，把这个目录变成git可以管理的仓库：git init
+2、添加文件夹下的所有文件到暂存区：git add .
+3、把文件提交到仓库：git commit -m '说明'
+4、关联到远程库：git remote add origin 远程库地址
+5、把本地库的所有内容推送到远程仓库：git push -u origin master
